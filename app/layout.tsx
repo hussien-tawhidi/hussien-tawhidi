@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import "./globals.css";
+import ParallaxProviderCliient from "@/components/providers/PralaxProvider";
 
 export const metadata: Metadata = {
   title: "Hussien Tawhidi",
@@ -10,10 +12,10 @@ export default function RootLayProut({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={` antialiased `} dir='rtl'>
-   
+      <body className={`antialiased `} dir='rtl'>
+        <ParallaxProviderCliient>
           <div className='w-full text-my-light'>{children}</div>
-     
+        </ParallaxProviderCliient>
       </body>
     </html>
   );
