@@ -8,7 +8,7 @@ export const shabname = localFont({
       style: "normal",
     },
     {
-      path: "../fonts/shabname/Shabnam-light.woff",
+      path: "../fonts/shabname/Shabnam-Light.woff",
       weight: "500",
       style: "normal",
     },
@@ -19,7 +19,7 @@ export const shabname = localFont({
       style: "normal",
     },
     {
-      path: "../fonts/shabname/Shabnam-bold.woff",
+      path: "../fonts/shabname/Shabnam-Bold.woff",
       weight: "900",
       style: "normal",
     },
