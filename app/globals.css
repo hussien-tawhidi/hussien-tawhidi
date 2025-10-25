@@ -1,26 +1,57 @@
 @import "tailwindcss";
+@import "./style/whats-uppbtn.css";
 
+/* 🌞 Light (default) theme only */
 :root {
-  --background: #ffffff;
+  --background: #eee;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+
+  /* ✅ Fonts */
+  --font-sans: var(--font-poppins);
   --font-mono: var(--font-geist-mono);
+
+  /* 🎨 Custom colors */
+  --color-my-green: #5e942b;
+  --color-my-yellow: #f3d000;
+  --color-my-blue: #2b4c7e;
+  --color-my-dark: #1e1f20;
+  --color-my-light: #4f4f51;
+  --color-my-white: #f2f7fb;
+  --color-my-gray: #81828c;
+  --color-my-red: #b53737;
+  --color-my-orange: #d14900;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 👇 Apply font globally */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 🔒 Hide scrollbars when needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 🎞 Animation */
+@keyframes shrinkCircle {
+  0% {
+    clip-path: circle(50% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(40% at 50% 50%);
+  }
+}
+
+.animate-shrink-circle {
+  animation: shrinkCircle 10s infinite alternate ease-in-out;
 }
