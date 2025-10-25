@@ -14,7 +14,7 @@ export const shabname = localFont({
     },
 
     {
-      path: "../fonts/shabname/Shabnam-medium.woff",
+      path: "../fonts/shabname/Shabnam-Medium.woff",
       weight: "700",
       style: "normal",
     },
