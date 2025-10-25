@@ -6,7 +6,6 @@ import Link from "next/link";
 import { BiMessageDetail } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa6";
 import { IoPhonePortraitOutline } from "react-icons/io5";
-import { Parallax } from "react-scroll-parallax";
 import TypingText from "./HeroTextTyping";
 
 export const heroContact = [

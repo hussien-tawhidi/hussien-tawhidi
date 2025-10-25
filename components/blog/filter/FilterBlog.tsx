@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaChevronDown } from "react-icons/fa";
+import { useState, useRef, useEffect } from "react";
 import Dropdown from "./Dropdown";
 
 interface FilterSortProps {
