@@ -113,44 +113,6 @@ const Header = () => {
                   </motion.li>
                 ))}
               </motion.ul>
-              <motion.div
-                initial='closed'
-                animate='open'
-                exit='closed'
-                variants={{
-                  open: {
-                    transition: { staggerChildren: 0.08, delayChildren: 0.2 },
-                  },
-                  closed: {
-                    transition: { staggerChildren: 0.05, staggerDirection: -1 },
-                  },
-                }}
-                className='text-left font-serif font-semibold mb-12 text-3xl md:text-5xl leading-tight space-y-1 pl-3'>
-                {["LET'S DESIGN", "CLEAN", "BEAUTIFUL"].map((text, i) => (
-                  <motion.p
-                    key={i}
-                    variants={{
-                      open: { opacity: 1, y: 0, scale: 1 },
-                      closed: { opacity: 0, y: 30, scale: 0.95 },
-                    }}
-                    transition={{
-                      duration: 0.6,
-                      ease: [0.25, 0.1, 0.25, 1],
-                      delay: i * 0.1,
-                    }}
-                    className='bg-gradient-to-r from-[#2b4c7e]  to-my-white bg-clip-text text-transparent drop-shadow-sm tracking-wide'>
-                    {text}
-                  </motion.p>
-                ))}
-
-                {/* Elegant underline accent */}
-                <motion.div
-                  initial={{ width: 0, opacity: 0 }}
-                  animate={{ width: "60%", opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.9 }}
-                  className='mt-4 h-[2px] bg-gradient-to-r mr-auto from-[#2b4c7e] to-[#a9bdd9] rounded-full'
-                />
-              </motion.div>
             </motion.div>
           )}
         </AnimatePresence>
