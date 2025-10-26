@@ -25,8 +25,8 @@ const ProjectsPage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className='relative max-w-5xl mx-auto text-center mb-16 px-4'>
-        {/* Subtle Decorative Gradient Glow */}
-        <div className='absolute inset-0 -z-10 blur-3xl opacity-20 bg-gradient-to-r from-my-blue via-purple-400 to-my-blue rounded-full'></div>
+        {/* Subtle Decorative linear Glow */}
+        <div className='absolute inset-0 -z-10 blur-3xl opacity-20 bg-linear-to-r from-my-blue via-purple-400 to-my-blue rounded-full'></div>
 
         {/* Section Label */}
         <motion.span
@@ -62,7 +62,7 @@ const ProjectsPage = () => {
           initial={{ width: 0, opacity: 0 }}
           animate={{ width: "80px", opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
-          className='mx-auto mt-6 h-[3px] bg-gradient-to-r from-my-blue to-my-blue/70 rounded-full'
+          className='mx-auto mt-6 h-[3px] bg-linear-to-r from-my-blue to-my-blue/70 rounded-full'
         />
       </motion.div>
 
@@ -87,8 +87,8 @@ const ProjectsPage = () => {
               className='object-cover w-full h-64 group-hover:grayscale-0 scale-100 group-hover:scale-110 transition-all duration-700 ease-out'
             />
 
-            {/* Overlay Gradient */}
-            <div className='absolute inset-0 bg-gradient-to-t dark:from-black/80 to-transparent transition-opacity duration-700 ease-out ' />
+            {/* Overlay linear */}
+            <div className='absolute inset-0 bg-linear-to-t dark:from-my-dark/30 to-transparent transition-opacity duration-700 ease-out ' />
 
             {/* Overlay Text (Optional) */}
             <div className='absolute bottom-0 filter backdrop-blur-xl left-0 p-4 opacity-0 group-hover:opacity-100 transition-all duration-700 ease-out'>

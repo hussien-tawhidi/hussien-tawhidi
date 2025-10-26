@@ -82,7 +82,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20, scale: 0.95 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
-                className='text-3xl md:text-7xl text-left mr-auto font-extrabold tracking-wider text-[#2b4c7e]'>
+                className='text-3xl md:text-7xl text-left mr-auto font-extrabold tracking-wider text-my-blue'>
                 تمیز و شیک
               </motion.h1>
 
