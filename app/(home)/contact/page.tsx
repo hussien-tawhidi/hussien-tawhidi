@@ -2,11 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  FaEnvelope,
-  FaPhoneAlt,
-  FaGithub,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaGithub } from "react-icons/fa";
 const contactItems = [
   {
     icon: FaEnvelope,
@@ -39,7 +35,7 @@ export default function ContactPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className='text-center mb-12'>
-        <h1 className='text-4xl font-bold text-right mb-3 text-my-blue'>
+        <h1 className='text-4xl font-bold text-right mb-3 text-my-light'>
           ارتباط با من
         </h1>
         <p className='max-w-2xl md:mx-auto text-sm text-right'>
@@ -64,13 +60,13 @@ export default function ContactPage() {
           <ul className='md:space-y-5 space-y-3'>
             {contactItems.map((item, index) => (
               <li key={index} className='flex items-center gap-3 group'>
-                <item.icon className='text-my-blue text-xl group-hover:scale-110 transition-transform duration-300' />
+                <item.icon className='text-my-light text-xl group-hover:scale-110 transition-transform duration-300' />
                 <span>
                   <strong className='md:flex hidden'>{item.label}</strong>{" "}
                   <Link
                     href={item.href}
                     target={item.target || "_self"}
-                    className='text-my-blue hover:underline transition-colors'>
+                    className='text-my-light hover:underline transition-colors'>
                     {item.value}
                   </Link>
                 </span>
@@ -87,7 +83,7 @@ export default function ContactPage() {
           transition={{ duration: 0.7 }}
           className='rounded-2xl shadow-md md:p-8 p-3 space-y-6'
           onSubmit={(e) => e.preventDefault()}>
-          <h2 className='text-2xl font-semibold mb-4 text-my-blue'>
+          <h2 className='text-2xl font-semibold mb-4 text-my-light'>
             ارسال پیام
           </h2>
 
@@ -118,7 +114,7 @@ export default function ContactPage() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             transition={{ duration: 0.2 }}
-            className='w-full py-3 rounded-lg border border-my-blue text-my-blue font-semibold transition'>
+            className='w-full py-3 rounded-lg border border-my-blue text-my-light font-semibold transition'>
             ارسال پیام
           </motion.button>
         </motion.form>

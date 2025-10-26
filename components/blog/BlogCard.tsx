@@ -34,7 +34,7 @@ export default function BlogCard({ post }: BlogCardProps) {
       <div className='absolute inset-0 bg-gradient-to-t from-my-dark via-my-dark/50 to-transparent transition-opacity duration-300 group-hover:opacity-90'></div>
 
       {/* Category + Date */}
-      <div className='absolute top-0 left-0 right-0 flex items-center justify-between p-4 text-my-blue'>
+      <div className='absolute top-0 left-0 right-0 flex items-center justify-between p-4 text-my-light'>
         <span className='px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-my-blue/80 text-my-white rounded'>
           {post.category || "دسته‌بندی"}
         </span>
@@ -51,7 +51,7 @@ export default function BlogCard({ post }: BlogCardProps) {
       {/* Title & Excerpt */}
       <div className='relative z-10 p-5'>
         <h2 className='text-lg font-semibold leading-snug mb-2'>
-          <span className='hover:text-my-blue text-my-white transition-colors duration-300'>
+          <span className='hover:text-my-light text-my-white transition-colors duration-300'>
             {post.title}
           </span>
         </h2>

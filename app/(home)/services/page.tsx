@@ -62,7 +62,7 @@ export default function ServicesPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className='text-4xl md:text-5xl font-bold'>
-          خدمات <span className='text-my-blue'>من</span>
+          خدمات <span className='text-my-light'>من</span>
         </motion.h2>
         <p className='mt-4 md:text-[16px] text-[14px] max-w-2xl'>
           از طراحی و توسعه وب‌سایت‌های فول‌استک گرفته تا خلق هویت بصری برند — من
@@ -80,7 +80,7 @@ export default function ServicesPage() {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true }}
             className='p-8 rounded-2xl overflow-hidden group flex flex-col justify-between shadow-2xl dark:border-my-gray/50 hover:-translate-y-1 transition-all duration-300'>
-            <div className='mb-4 flex items-center gap-2 text-my-blue text-4xl'>
+            <div className='mb-4 flex items-center gap-2 text-my-light text-4xl'>
               {service.icon}
               <h3 className='text-lg font-semibold mb-2'>{service.title}</h3>
             </div>

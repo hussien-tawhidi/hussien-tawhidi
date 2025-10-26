@@ -17,7 +17,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   const toggleMenu = () => setIsVisible(!isVisible);
 
   return (
@@ -60,7 +59,7 @@ const Header = () => {
               className='relative group'>
               <Link
                 href={item.href}
-                className='transition-all flex items-center gap-2 duration-200 hover:text-my-blue'>
+                className='transition-all flex items-center gap-2 duration-200 hover:text-my-light'>
                 <item.icon />
                 {item.title}
               </Link>
@@ -104,11 +103,11 @@ const Header = () => {
                     }}
                     transition={{ duration: 0.25 }}
                     onClick={() => setIsVisible(false)}
-                    className='w-full border-b text-my-blue border-my-blue/10 pb-2 flex items-center gap-2'>
+                    className='w-full border-b text-my-light border-my-blue/10 pb-2 flex items-center gap-2'>
                     <item.icon className='' />
                     <Link
                       href={item.href}
-                      className='block text-sm md:text-base hover:text-my-blue transition-colors duration-150'>
+                      className='block text-sm md:text-base hover:text-my-light transition-colors duration-150'>
                       {item.title}
                     </Link>
                   </motion.li>

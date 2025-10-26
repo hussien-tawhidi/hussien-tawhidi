@@ -11,7 +11,7 @@ export default function HamburgerButton({
     <button
       onClick={onClick}
       aria-label='Toggle menu'
-      className='relative w-10 h-10 text-my-blue focus:outline-none'>
+      className='relative w-10 h-10 text-my-light focus:outline-none'>
       <div className='absolute left-1/2 top-1/2 w-5 -translate-x-1/2 -translate-y-1/2'>
         {/* Top line */}
         <span

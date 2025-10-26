@@ -33,7 +33,7 @@ const ProjectsPage = () => {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className='inline-block text-sm sm:text-base font-semibold tracking-widest text-my-blue/70 uppercase mb-4'>
+          className='inline-block text-sm sm:text-base font-semibold tracking-widest text-my-light/70 uppercase mb-4'>
           نمونه کارهای ما
         </motion.span>
 
@@ -42,7 +42,7 @@ const ProjectsPage = () => {
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className='text-4xl sm:text-5xl font-extrabold text-my-blue mb-5 leading-tight'>
+          className='text-4xl sm:text-5xl font-extrabold text-my-light mb-5 leading-tight'>
           طراحی‌های مدرن، تمیز و تاثیرگذار
         </motion.h1>
 
@@ -77,7 +77,7 @@ const ProjectsPage = () => {
             key={index}
             href={project.link}
             target='_blank'
-            className='relative overflow-hidden rounded-xl text-my-blue group shadow-md hover:shadow-xl transition-all duration-500 ease-out'>
+            className='relative overflow-hidden rounded-xl text-my-light group shadow-md hover:shadow-xl transition-all duration-500 ease-out'>
             {/* Image */}
             <Image
               src={project.image}

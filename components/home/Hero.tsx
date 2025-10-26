@@ -95,7 +95,7 @@ export default function Hero() {
                   <Link
                     href={item.link}
                     key={item.id}
-                    className='text-xl bg-my-white text-my-blue p-2 rounded-full'>
+                    className='text-xl bg-my-white text-my-light p-2 rounded-full'>
                     {<item.icon />}
                   </Link>
                 ))}

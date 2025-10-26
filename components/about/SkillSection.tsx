@@ -17,7 +17,7 @@ export default function SkillsSection() {
   ];
 
   const SkillBar = ({ skill, level }: { skill: string; level: number }) => (
-    <div className='group mb-5 text-my-blue'>
+    <div className='group mb-5 text-my-light'>
       <div className='flex justify-between text-sm mb-1'>
         <span className='font-medium'>{skill}</span>
         <span className='font-semibold'>{level}%</span>
@@ -34,10 +34,10 @@ export default function SkillsSection() {
   );
 
   return (
-    <div  className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-12'>
+    <div className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-12'>
       {/* مهارت‌های برنامه‌نویسی */}
       <div className='p-6 rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-lg'>
-        <h4 className='text-2xl font-semibold mb-6 text-my-blue'>
+        <h4 className='text-2xl font-semibold mb-6 text-my-light'>
           مهارت‌های برنامه‌نویسی
         </h4>
         {programmingSkills.map((s, i) => (
@@ -47,7 +47,7 @@ export default function SkillsSection() {
 
       {/* مهارت‌های زبانی */}
       <div className='p-6 rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-lg'>
-        <h4 className='text-2xl font-semibold mb-6 text-my-blue'>
+        <h4 className='text-2xl font-semibold mb-6 text-my-light'>
           مهارت‌های زبانی
         </h4>
         {languageSkills.map((s, i) => (

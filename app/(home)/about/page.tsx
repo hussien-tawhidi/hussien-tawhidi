@@ -14,7 +14,7 @@ export default function AboutPage() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className='text-xl font-bold mb-10 border-b border-my-gray/50 text-my-blue inline-block pb-2'>
+        className='text-xl font-bold mb-10 border-b border-my-gray/50 text-my-light inline-block pb-2'>
         درباره من
       </motion.h2>
 
@@ -40,8 +40,8 @@ export default function AboutPage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className='flex-1 space-y-5'>
-          <h3 className='text-2xl font-semibold text-my-blue'>حسین توحیدی</h3>
-          <p className='text-sm opacity-80 font-semibold border-b border-my-blue pb-2 text-my-blue'>
+          <h3 className='text-2xl font-semibold text-my-light'>حسین توحیدی</h3>
+          <p className='text-sm opacity-80 font-semibold border-b border-my-blue pb-2 text-my-light'>
             توسعه‌دهنده وب سایت و گرافیک
           </p>
           <p className='leading-relaxed text-sm'>
@@ -62,7 +62,7 @@ export default function AboutPage() {
           <Link
             href='/cv.pdf'
             download='Hussien_Tawhidi_CV.pdf'
-            className='mt-6 px-6 py-2 border border-my-blue text-my-blue transition-all rounded hover:bg-my-orange hover:text-white'>
+            className='mt-6 px-6 py-2 border border-my-blue text-my-light transition-all rounded hover:bg-my-orange hover:text-white'>
             دانلود رزومه
           </Link>
         </motion.div>

@@ -15,7 +15,9 @@ export default function RootLayProut({
     <html lang='en' suppressHydrationWarning>
       <body className={`${shabname.variable} antialiased `} dir='rtl'>
         <ParallaxProviderCliient>
-          <div className='w-full text-my-light'>{children}</div>
+          <div className='w-full text-my-light dark:bg-my-white dark:text-my-light bg-my-white '>
+            {children}
+          </div>
         </ParallaxProviderCliient>
       </body>
     </html>

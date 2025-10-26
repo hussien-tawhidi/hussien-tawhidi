@@ -43,7 +43,7 @@ export default function Dropdown({
            text-my-light rounded-xl
           shadow-md transition-all duration-300 
           hover:shadow-lg focus:outline-none`}>
-        <span className="md:text-[14px] text-[12px]">{activeLabel}</span>
+        <span className='md:text-[14px] text-[12px]'>{activeLabel}</span>
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.2 }}>
@@ -67,10 +67,10 @@ export default function Dropdown({
                   setOpen(false);
                 }}
                 whileHover={{ scale: 1.02 }}
-                className={`px-4 py-3 text-my-blue md:text-[14px] text-[12px] text-base cursor-pointer transition-all duration-200
+                className={`px-4 py-3 text-my-light md:text-[14px] text-[12px] text-base cursor-pointer transition-all duration-200
                   ${
                     activeValue === opt.value
-                      ? "bg-my-blue/10 text-my-blue font-semibold"
+                      ? "bg-my-blue/10 text-my-light font-semibold"
                       : ""
                   }`}>
                 {opt.label}

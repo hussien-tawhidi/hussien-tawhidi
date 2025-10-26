@@ -24,7 +24,7 @@ export default function TypingText() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 1 }}
-      className='mt-6 md:text-lg text-xs leading-relaxed font-semibold text-my-blue'>
+      className='mt-6 md:text-lg text-xs leading-relaxed font-semibold text-my-light'>
       {displayedText}
       <motion.span
         animate={{ opacity: [0, 1, 0] }}

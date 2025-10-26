@@ -48,7 +48,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
                     className={`flex items-center justify-between w-full p-2 rounded-lg transition
                       ${
                         isActive
-                          ? "bg-my-orange/30 text-my-blue"
+                          ? "bg-my-orange/30 text-my-light"
                           : "hover:bg-my-gray/20"
                       }`}>
                     <div className='flex items-center gap-3'>
@@ -75,7 +75,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
                               href={sub.path}
                               className={`block p-2 rounded-md text-xs transition ${
                                 isSubActive
-                                  ? "bg-my-orange/40 text-my-blue"
+                                  ? "bg-my-orange/40 text-my-light"
                                   : "hover:bg-my-gray/30"
                               }`}>
                               {sub.title}
@@ -90,7 +90,7 @@ const SidebarMenu: React.FC<SidebarMenuProps> = ({
                 <Link
                   href={item.path || "#"}
                   className={`flex items-center text-sm gap-3 p-2 rounded-lg transition font-light 
-                    ${isActive ? "text-my-blue" : "hover:bg-my-gray/20"}`}>
+                    ${isActive ? "text-my-light" : "hover:bg-my-gray/20"}`}>
                   <item.icon />
                   {!collapsed && <span>{item.title}</span>}
                 </Link>

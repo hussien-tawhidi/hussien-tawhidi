@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 
 export default function SingleBlogPage() {
@@ -24,12 +23,12 @@ export default function SingleBlogPage() {
     <div className='bg-my-white text-right py-24 px-6 sm:px-16 max-w-5xl mx-auto'>
       {/* Header / Title */}
       <div className='mb-10'>
-        <h1 className='text-4xl sm:text-5xl font-extrabold text-my-blue mb-4'>
+        <h1 className='text-4xl sm:text-5xl font-extrabold text-my-light mb-4'>
           {post.title}
         </h1>
         <div className='flex items-center gap-4 text-sm text-my-light'>
           <span>{post.date}</span>
-          <span className='px-2 py-1 bg-my-blue/20 text-my-blue rounded'>
+          <span className='px-2 py-1 bg-my-blue/20 text-my-light rounded'>
             {post.category}
           </span>
         </div>

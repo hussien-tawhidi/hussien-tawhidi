@@ -35,8 +35,8 @@ export default function PersonalInfo() {
       <div className='space-y-3'>
         {infoLeft.map((item, i) => (
           <div key={i} className='flex items-center gap-3'>
-            <item.icon className='text-lg text-my-blue' />
-            <span className='font-semibold w-28 text-my-blue'>
+            <item.icon className='text-lg text-my-light' />
+            <span className='font-semibold w-28 text-my-light'>
               {item.label}:
             </span>
             <span className='truncate'>{item.value}</span>
@@ -48,8 +48,8 @@ export default function PersonalInfo() {
       <div className='space-y-3'>
         {infoRight.map((item, i) => (
           <div key={i} className='flex items-center gap-3'>
-            <item.icon className='text-lg text-my-blue' />
-            <span className='font-semibold w-28 text-my-blue'>
+            <item.icon className='text-lg text-my-light' />
+            <span className='font-semibold w-28 text-my-light'>
               {item.label}:
             </span>
             <span className='truncate'>{item.value}</span>

@@ -99,14 +99,14 @@ export default function MagazinePage() {
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         {/* Header */}
         <div className='max-w-3xl text-right'>
-          <h2 className='text-4xl font-extrabold tracking-tight text-my-blue sm:text-5xl'>
+          <h2 className='text-4xl font-extrabold tracking-tight text-my-light sm:text-5xl'>
             وبلاگ، مقالات و آموزش‌ها
           </h2>
           <p className='mt-4 text-my-light opacity-85 leading-relaxed'>
             در اینجا ایده‌ها، تجربیات و نکاتی را می‌خوانید که حاصل سال‌ها فعالیت
             در حوزه طراحی، توسعه و بازاریابی دیجیتال است. هر مقاله تلاشی است
             برای کمک به شما تا برندتان را{" "}
-            <span className='font-semibold text-my-blue'>
+            <span className='font-semibold text-my-light'>
               پایدارتر، مؤثرتر و حرفه‌ای‌تر
             </span>{" "}
             بسازید.

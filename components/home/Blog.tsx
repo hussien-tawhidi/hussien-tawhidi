@@ -44,10 +44,10 @@ export default function Blog() {
     <section className='py-16 md:w-[90%] w-[95%] mx-auto' id='blog'>
       <div className='container mx-auto space-y-10'>
         <div className='flex items-center justify-between border-b border-my-gray/20 pb-2 mb-4'>
-          <h4 className='text-lg font-bold text-my-blue'>مقالات</h4>
+          <h4 className='text-lg font-bold text-my-light'>مقالات</h4>
           <Link
             href='/blog'
-            className='text-sm text-my-blue hover:text-my-orange transition-colors duration-300 flex items-center gap-1'>
+            className='text-sm text-my-light hover:text-my-orange transition-colors duration-300 flex items-center gap-1'>
             <span>همه مقالات</span>
             <LiaArrowLeftSolid />
           </Link>
@@ -58,7 +58,7 @@ export default function Blog() {
             <Link
               href={post.link}
               key={index}
-              className='flex flex-col rounded-2xl overflow-hidden shadow-xl text-my-blue hover:shadow-lg transition-all duration-500 hover:-translate-y-2'>
+              className='flex flex-col rounded-2xl overflow-hidden shadow-xl text-my-light hover:shadow-lg transition-all duration-500 hover:-translate-y-2'>
               {/* Image */}
               <div aria-label={post.title}>
                 <div className='relative w-full h-52 overflow-hidden'>
@@ -78,7 +78,7 @@ export default function Blog() {
                   {post.category}
                 </div>
 
-                <h3 className='text-lg text-my-blue font-semibold leading-snug line-clamp-2'>
+                <h3 className='text-lg text-my-light font-semibold leading-snug line-clamp-2'>
                   {post.title}
                 </h3>
 

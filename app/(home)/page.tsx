@@ -13,22 +13,6 @@ export default function Home() {
       <WhyWebsite />
       <Packages />
 
-      <div className='md:w-[90%] w-full mx-auto rounded-xl overflow-hidden'>
-        <Image
-          src={"/assets/banner-sm.jpg"}
-          width={1500}
-          height={700}
-          className='object-cover w-full md:hidden flex'
-          alt='banner'
-        />
-        <Image
-          src={"/assets/banner.jpg"}
-          width={1500}
-          height={700}
-          className='object-cover w-full md:flex hidden'
-          alt='banner'
-        />
-      </div>
       <About />
       <Sample />
       <Blog />

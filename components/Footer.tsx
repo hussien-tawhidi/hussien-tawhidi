@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div className='w-full py-10 flex items-center bg-my-white justify-center'>
       <div className='md:w-2/3 w-full px-4 flex flex-col'>
-        <div className='w-full md:text-5xl text-2xl font-bold text-my-blue'>
+        <div className='w-full md:text-5xl text-2xl font-bold text-my-light'>
           <h1 className='w-full md:w-2/3'>
             چگونه می‌توانیم به شما کمک کنیم؟ با ما در تماس باشید
           </h1>
@@ -20,7 +20,7 @@ export default function Footer() {
           <div className='w-44 pt-6 md:pt-0'>
             <Link
               href={"/"}
-              className='bg-my-blue text-my-white justify-center text-center rounded-lg shadow px-10 py-3 flex items-center'>
+              className='bg-my-light text-my-white justify-center text-center rounded-lg shadow px-10 py-3 flex items-center'>
               تماس با ما
             </Link>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
               </Link>
             ))}
           </div>
-          <div className='flex flex-row items-center text-my-blue justify-center gap-10'>
+          <div className='flex flex-row items-center text-my-light justify-center gap-10'>
             {socialMediaIcons.map((item, index) => (
               <Link href={item.link} key={index}>
                 <item.icon />

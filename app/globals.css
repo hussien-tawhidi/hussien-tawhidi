@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import "./style/whats-uppbtn.css";
-
 /* 🌞 Light (default) theme only */
 :root {
   --background: #eee;
@@ -18,7 +16,7 @@
   /* 🎨 Custom colors */
   --color-my-green: #5e942b;
   --color-my-yellow: #f3d000;
-  --color-my-blue: #2b4c7e;
+  --color-my-blue: #c4beb2;
   --color-my-dark: #1e1f20;
   --color-my-light: #4f4f51;
   --color-my-white: #f2f7fb;

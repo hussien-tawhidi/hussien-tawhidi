@@ -2,8 +2,8 @@ import { packages } from "@/constant/home";
 
 export default function Packages() {
   return (
-    <div className='relative md:w-[92%] mx-auto w-[95%] shadow-2xl px-[2%] pb-[4%]'>
-      <h2 className='my-10 text-2xl text-my-blue font-extrabold'>
+    <div className='relative md:w-[92%] mx-auto w-[95%] px-[2%] pb-[4%]'>
+      <h2 className='my-10 text-2xl text-my-light font-extrabold'>
         تعرفه طراحی سایت
       </h2>
       <div className='grid gap-8 text-my-light md:grid-cols-4'>
@@ -17,7 +17,9 @@ export default function Packages() {
               <div className='p-3'>
                 <Icon className='w-8 h-8 mb-2' />
                 <h3 className='text-xl font-bold'>{pkg.name}</h3>
-                <p className='text-[12px] mb-4'>{pkg.shortDescription}</p>
+                <p className='md:text-[12px] text-[10px] mb-4'>
+                  {pkg.shortDescription}
+                </p>
                 <p className='absolute top-0 left-0 bg-linear-to-r from-my-blue to-my-blue/50 text-white text-sm p-2 rounded-br-lg shadow-lg'>
                   {pkg.priceRangeUSD} $
                 </p>
