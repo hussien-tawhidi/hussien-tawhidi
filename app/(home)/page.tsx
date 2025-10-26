@@ -11,6 +11,8 @@ export default function Home() {
     <div className='bg-my-white'>
       <Hero />
       <WhyWebsite />
+      <Packages />
+
       <div className='md:w-[90%] w-full mx-auto rounded-xl overflow-hidden'>
         <Image
           src={"/assets/banner-sm.jpg"}
@@ -28,7 +30,6 @@ export default function Home() {
         />
       </div>
       <About />
-      <Packages />
       <Sample />
       <Blog />
     </div>
